@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backend:
+    image: three-tier-backend:v1
+    container_name: backend-container
+    ports:
+      - "5000:5000"
+
+  frontend:
+    image: three-tier-frontend:v1
+    container_name: frontend-container
+    ports:
+      - "8081:80"
+    depends_on:
+      - backend
