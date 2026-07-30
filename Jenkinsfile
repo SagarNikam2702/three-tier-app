@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/SagarNikam2702/three-tier-app.git'
-            }
-        }
-
         stage('Build Backend Image') {
             steps {
                 bat 'docker build -t sagarnikam2702/three-tier-backend:v1 backend'
