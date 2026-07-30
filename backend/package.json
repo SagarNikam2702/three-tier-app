@@ -1,0 +1,13 @@
+{
+  "name": "three-tier-backend",
+  "version": "1.0.0",
+  "description": "Backend for 3-Tier Application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
